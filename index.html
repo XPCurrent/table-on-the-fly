@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function displayTable(){
+            var table=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24] //this is our table
+            for (let i = 0; i < 24; i++){//do this 24 times
+                var message="Element number ";//reset message value to default
+                var currNumber = table[Math.floor(i)];//get current number
+                message=message+Math.floor(i+1)+" is "+currNumber; //Math.floor is used here to get rid of the 0 in display, set message up
+                console.log(message);//log to console, I used it before document.getElementById
+                document.getElementById("display").innerHTML=document.getElementById("display").innerHTML+message+"<br>"//add message to display div
+            }
+        }
+    </script>
+</head>
+<body onload="displayTable()">
+    <h1>Oh look, I'm trying to display a 24-element table which contains numbers from 1 to 24!</h1>
+    <div id="display"></div>
+</body>
+</html>
