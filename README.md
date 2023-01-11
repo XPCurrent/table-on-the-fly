@@ -1,2 +1,2 @@
-# display24elementtable
-displays a 24-element table made in javascript
+# Table on the fly
+Creates, displays and randomizes a 24-element table of numbers.
